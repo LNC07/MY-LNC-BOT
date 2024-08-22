@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Mining Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="clicker-game">
+            <button onclick="clickGame()">Click me!</button>
+        </div>
+        <div id="boost-container">
+            <button id="click-btn" onclick="buyClick()">Click Level Up</button>
+            <button id="limit-btn" onclick="buyLimit()">Limit Level Up</button>
+        </div>
+        <div id="start-container">
+            <button id="start-btn" onclick="startGame()">Start Mining</button>
+        </div>
+        <p id="score"><span>🪙 LNC Coin</span>LNC: 0</p>
+        <button id="withdrawal-btn" onclick="withdrawal()">Withdrawal</button>
+        <button id="buy-bot-btn" onclick="buyBot()">Buy Bot</button>
+        <button id="claim-btn" onclick="claimBot()">Claim</button>
+        <p id="withdrawal-msg"></p>
+        <p id="bot-msg"></p>
+        <p id="task-msg"></p>
+        <button id="boost-btn" onclick="showBoost()">Boost</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
